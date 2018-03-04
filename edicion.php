@@ -3177,6 +3177,7 @@ if($rowcount > 0 )
 	let check = document.getElementById("checkpp");
 	if (!check.checked){
 		check.click();
+		echo "yes";
 	}
 
 </script>
@@ -3193,6 +3194,7 @@ else{
 		let check = document.getElementById("checkpp");
 		if (check.checked){
 			check.click();
+			echo "dont";
 		}
 	 </script>
 	<?php
