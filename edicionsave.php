@@ -16,6 +16,7 @@ require_once ('conexion.php');
 
 
 $usuario = $_SESSION["usuario"];
+var_dump($usuario);
 
 			 ?> 
 			 
@@ -1186,16 +1187,17 @@ else{
 
 	
 		echo "<script>
+	console.log('$sql');
 	swal({
   title: '',
   text: 'Fallo al Actualizar, contactese con el Administrador del sistema',
   showConfirmButton: false
 });
 	    setTimeout(function(){  window.location='index/index.php';   }, 1000);
+
+
         </script>";
-	
-	
-	
+
 }
 
 
