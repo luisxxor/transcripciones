@@ -1,0 +1,40 @@
+SELECT i.idincidencias, i.descripcion, i.fecha,
+case i.perdida when 0 then 'Sin Incidencias' when 1 then 'No' when 2 then 'Si' end as perdida
+,i.canal, i.programa,
+case i.audio 
+when 0 then 'Sin Incidencias' when 1 then 'Asterisk' when 2 then 'Nacional (188)' 
+when 3 then 'Icap' when 4 then 'Qvidium' when 5 then 'DVR' when 6 then 'TeamSpeak' when 7 then 'Skype' 
+when 8 then 'Asterisk + Qvidium' when 9 then 'DVR + Qvidium' when 10 then 'Asterisk + DVR'
+end as audio,
+i.idtipoproblema,
+case i.origen when 0 then 'Sin Incidencias' when 1 then 'Externo' when 2 then 'Interno' end as origen,
+case i.encoder when 0 then 'Sin Incidencias' when 1 then 'DOD'when 2 then 'DOC' when 3 then 'Robotics' when 4 then 'Icap' when 5 then 'Webcaps' end as encoder,
+case i.software when 0 then 'Sin Incidencias' when 1 then 'Captionmaker' when 2 then 'Catalyst' end as software,
+case i.tipocaptioner when 0 then 'Sin Incidencias' when 1 then 'Digitador' when 2 then 'Estenotipista' when 3 then 'Dragoner' end as tipocaptioner,
+i.nombrecaptioner, 
+case i.oficina when 0 then 'Sin Incidencias' when 1 then 'Chile' when 2 then 'Argentina' end as oficina,
+i.horainicioproblema, i.horafin, i.tiempototal, 
+case i.redialed when 0 then 'Sin Incidencias' when 1 then 'No' when 2 then 'Si' end as redialed, 
+case i.contacto when 0 then 'Ninguno' when 1 then 'No' when 2 then 'Si' end as contacto,
+i.personacontacto,
+
+case i.soporte1 when 0 then 'Sin Incidencias' when 1 then 'Andres Amunategui' when 2 then 'Andre Autran' when 3 then 'Jose Montt'
+when 4 then 'Rodrigo Ocaña' when 5 then 'Enzo Parra' when 6 then 'Luis Retamales' when 7 then 'Antonio Rodriguez' when 8 then 'Esteban Saez'
+when 9 then 'Fabian Salinas' when 10 then 'Carlos Sanchez' when 11 then 'Fernando Silva'  end as soporte1,
+
+case i.soporte2 when 0 then 'Sin Incidencias' when 1 then 'Andres Amunategui' when 2 then 'Andre Autran' when 3 then 'Jose Montt'
+when 4 then 'Rodrigo Ocaña' when 5 then 'Enzo Parra' when 6 then 'Luis Retamales' when 7 then 'Antonio Rodriguez' when 8 then 'Esteban Saez'
+when 9 then 'Fabian Salinas' when 10 then 'Carlos Sanchez' when 11 then 'Fernando Silva'  end as soporte2,
+
+
+case i.soporte3 when 0 then 'Sin Incidencias' when 1 then 'Andres Amunategui' when 2 then 'Andre Autran' when 3 then 'Jose Montt'
+when 4 then 'Rodrigo Ocaña' when 5 then 'Enzo Parra' when 6 then 'Luis Retamales' when 7 then 'Antonio Rodriguez' when 8 then 'Esteban Saez'
+when 9 then 'Fabian Salinas' when 10 then 'Carlos Sanchez' when 11 then 'Fernando Silva'  end as soporte3,
+
+
+case i.soporte4 when 0 then 'Sin Incidencias' when 1 then 'Andres Amunategui' when 2 then 'Andre Autran' when 3 then 'Jose Montt'
+when 4 then 'Rodrigo Ocaña' when 5 then 'Enzo Parra' when 6 then 'Luis Retamales' when 7 then 'Antonio Rodriguez' when 8 then 'Esteban Saez'
+when 9 then 'Fabian Salinas' when 10 then 'Carlos Sanchez' when 11 then 'Fernando Silva'  end as soporte4,
+case i.turno when 0 then 'Sin Especificar' when 1 then 'Mañana' when 2 then 'Tarde' when 3 then 'Noche' end as turno,
+(select  t.descripcion from tipoproblema t where i.idtipoproblema = t.idtipoproblema) as DescripcionProblema
+FROM incidencias i where 1=1

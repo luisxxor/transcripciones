@@ -1,0 +1,28 @@
+<?php
+// calculamos la primera y última página a mostrar
+$primera = $pagina - ($pagina % 10) + 1;
+if ($primera > $pagina) { $primera = $primera - 10; }
+$ultima = $primera + 9 > $total_paginas ? $total_paginas : $primera + 9; 
+?>
+<nav aria-label="Page navigation" class="text-center">
+     <ul class="pagination">
+        <?php
+        if ($total_paginas > 1) {
+            // comprobamos $primera en lugar de $pagina
+            if ($primera != 1)
+                echo '<li><a href="'.$url.'?pagina='.($primera-1).'" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+
+            // mostramos de la primera a la última
+            for ($i = $primera; $i <=$ultima; $i++){
+                if ($pagina == $i)
+                    echo '<li class="active"><a href="#">'.$pagina.'</a></li>';
+                else
+                    echo '<li><a href="'.$url.'?pagina='.$i.'">'.$i.'</a></li>';
+            }
+
+            if ($i <= $total_paginas)
+                echo '<li><a href="'.$url.'?pagina='.($i).'"><span aria-hidden="true">&raquo;</span></a></li>';
+        }
+        ?>
+      </ul>
+</nav>

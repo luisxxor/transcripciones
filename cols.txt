@@ -1,0 +1,296 @@
+
+/*
+$col = array();
+$col["title"] = "Transcriptor1"; // caption of column
+$col["name"] = "idtranscriptor1"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;		
+
+$col = array();
+$col["title"] = "Tiempo TR 1"; // caption of column
+$col["name"] = "tiempotr1"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Transcriptor 2"; // caption of column
+$col["name"] = "idtranscriptor2"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;		
+
+$col = array();
+$col["title"] = "Tiempo TR 2"; // caption of column
+$col["name"] = "tiempotr2"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+$col = array();
+
+
+$col["title"] = "Transcriptor 3"; // caption of column
+$col["name"] = "idtranscriptor3"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Tiempo TR 3"; // caption of column
+$col["name"] = "tiempotr3"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Transcriptor 4"; // caption of column
+$col["name"] = "idtranscriptor4"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;		
+
+$col = array();
+$col["title"] = "Tiempo TR 4"; // caption of column
+$col["name"] = "tiempotr4"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Transcriptor 5"; // caption of column
+$col["name"] = "idtranscriptor5"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;		
+
+$col = array();
+$col["title"] = "Tiempo TR 5"; // caption of column
+$col["name"] = "tiempotr5"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Transcriptor 6"; // caption of column
+$col["name"] = "idtranscriptor6"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;		
+
+$col = array();
+$col["title"] = "Tiempo TR 6"; // caption of column
+$col["name"] = "tiempotr6"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Fecha Interna 1"; // caption of column
+$col["name"] = "fechainterna1"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "55";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "TimeCoder 1"; // caption of column
+$col["name"] = "idtimecoder1"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Tiempo TC 1"; // caption of column
+$col["name"] = "tiempotc1"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "TimeCoder 2"; // caption of column
+$col["name"] = "idtimecoder2"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Tiempo TC 2"; // caption of column
+$col["name"] = "tiempotc2"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "TimeCoder 3"; // caption of column
+$col["name"] = "idtimecoder3"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Tiempo TC 3"; // caption of column
+$col["name"] = "tiempotc3"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "TimeCoder 4"; // caption of column
+$col["name"] = "idtimecoder4"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Tiempo TC 4"; // caption of column
+$col["name"] = "tiempotc4"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "TimeCoder 5"; // caption of column
+$col["name"] = "timecoder5"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Tiempo TC 5"; // caption of column
+$col["name"] = "tiempotc5"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "TimeCoder 6"; // caption of column
+$col["name"] = "idtimecoder6"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Tiempo TC 6"; // caption of column
+$col["name"] = "tiempotc6"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+
+$col = array();
+$col["title"] = "Fecha Interna P2"; // caption of column
+$col["name"] = "fechainterna2"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "55";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "PostProductor 1"; // caption of column
+$col["name"] = "idpostproductor1"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Tiempo PP 1"; // caption of column
+$col["name"] = "tiempopp1"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "PostProductor 2"; // caption of column
+$col["name"] = "idpostproductor2"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;
+
+$col = array();
+$col["title"] = "Tiempo PP 2"; // caption of column
+$col["name"] = "tiempopp2"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+
+$col = array();
+$col["title"] = "PostProductor 3"; // caption of column
+$col["name"] = "idpostproductor3"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+$col = array();
+$col["title"] = "Tiempo PP 3"; // caption of column
+$col["name"] = "tiempopp3"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "PostProductor 4"; // caption of column
+$col["name"] = "idpostproductor4"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Tiempo PP 4"; // caption of column
+$col["name"] = "tiempopp4"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "PostProductor 5"; // caption of column
+$col["name"] = "idpostproductor5"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Tiempo PP 5"; // caption of column
+$col["name"] = "tiempopp5"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "PostProductor 6"; // caption of column
+$col["name"] = "idpostproductor6"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "65";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+$col = array();
+$col["title"] = "Tiempo PP 6"; // caption of column
+$col["name"] = "tiempopp6"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "35";
+$col["editable"] = false;
+$cols[] = $col;	
+
+
+
+$col = array();
+$col["title"] = "Fecha Interna P3"; // caption of column
+$col["name"] = "fechainterna3"; // grid column name, must be exactly same as returned column-name from sql (tablefield or field-alias)
+$col["width"] = "60";
+$col["editable"] = false;
+$cols[] = $col;	
+
+*/
